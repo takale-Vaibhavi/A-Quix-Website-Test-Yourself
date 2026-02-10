@@ -6,4 +6,4 @@ Tech Stack:
 - JavaScript
 
 Live Demo:
-https://yourusername.github.io/my-frontend-website/
+https://takale-vaibhavi.github.io/A-Quix-Website-Test-Yourself/
