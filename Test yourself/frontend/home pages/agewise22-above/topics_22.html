@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Topics for Age 22+</title>
+  <link rel="stylesheet" href="topics_22.css" />
+</head>
+<body>
+  <div class="container header d-flex justify-content-between align-items-start my-5">
+    <div>
+      <h1>Choose a <span>Topic</span></h1>
+      <p>Pick a topic for your quiz!</p>
+    </div>
+    <a href="../age_group/age_group.html" class="back-btn">← Back</a>
+  </div>
+
+  <div class="card-container">
+    <div class="card" data-topic="Advanced Mathematics">
+      <h2>➗ Advanced Mathematics</h2>
+      <p>Calculus, statistics, probability, linear algebra, and advanced problem-solving.</p>
+      <button>Select Topic</button>
+    </div>
+    <div class="card" data-topic="Physics">
+      <h2>🧲 Physics</h2>
+      <p>Advanced concepts, modern physics, quantum mechanics, and research-level topics.</p>
+      <button>Select Topic</button>
+    </div>
+    <div class="card" data-topic="Chemistry">
+      <h2>⚗ Chemistry</h2>
+      <p>Organic, inorganic, physical, analytical, and advanced chemical applications.</p>
+      <button>Select Topic</button>
+    </div>
+    <div class="card" data-topic="Biology">
+      <h2>🧬 Biology</h2>
+      <p>Genetics, microbiology, molecular biology, biotechnology, and applied biology.</p>
+      <button>Select Topic</button>
+    </div>
+    <div class="card" data-topic="Computer Science & IT">
+      <h2>💻 Computer Science & IT</h2>
+      <p>Programming, data structures, algorithms, AI, web development, and cybersecurity.</p>
+      <button>Select Topic</button>
+    </div>
+    <div class="card" data-topic="Business & Management">
+      <h2>💼 Business & Management</h2>
+      <p>Finance, marketing, management, entrepreneurship, and global business trends.</p>
+      <button>Select Topic</button>
+    </div>
+    <div class="card" data-topic="Logical Reasoning & Aptitude">
+      <h2>🧩 Logical Reasoning & Aptitude</h2>
+      <p>Critical thinking, puzzles, analytical reasoning, and quantitative aptitude.</p>
+      <button>Select Topic</button>
+    </div>
+    <div class="card" data-topic="Current Affairs & GK">
+      <h2>🌍 Current Affairs & GK</h2>
+      <p>Global events, politics, economics, general knowledge, and professional awareness.</p>
+      <button>Select Topic</button>
+    </div>
+  </div>
+
+  <script>const buttons = document.querySelectorAll(".card button");
+
+    buttons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        const topic = btn.closest(".card").dataset.topic;
+        alert(`You selected the topic: ${topic}`);
+        // Optional: redirect to quiz page:
+        // window.location.href = `quiz_22_plus.html?topic=${topic}`;
+      });
+    });
+    
+
+  </script>
+</body>
+</html>

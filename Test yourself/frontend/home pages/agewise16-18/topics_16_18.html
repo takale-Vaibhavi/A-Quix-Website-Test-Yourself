@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Topics for Age 16-18</title>
+  <link rel="stylesheet" href="topics_16_18.css" />
+</head>
+<body>
+  <div class="container header d-flex justify-content-between align-items-start my-5">
+    <div>
+      <h1>Choose a <span>Topic</span></h1>
+      <p>Pick a topic for your quiz!</p>
+    </div>
+    <a href="../age_group/age_group.html" class="back-btn">← Back</a>
+  </div>
+
+  <div class="card-container">
+    <div class="card" data-topic="Mathematics">
+      <h2>➗ Mathematics</h2>
+      <p>Advanced algebra, trigonometry, probability, and calculus basics.</p>
+      <button>Select Topic</button>
+    </div>
+    <div class="card" data-topic="Physics">
+      <h2>🧲 Physics</h2>
+      <p>Mechanics, electricity, magnetism, waves, and optics.</p>
+      <button>Select Topic</button>
+    </div>
+    <div class="card" data-topic="Chemistry">
+      <h2>⚗ Chemistry</h2>
+      <p>Organic, inorganic, physical chemistry, and reactions.</p>
+      <button>Select Topic</button>
+    </div>
+    <div class="card" data-topic="Biology">
+      <h2>🧬 Biology</h2>
+      <p>Genetics, human anatomy, physiology, and ecology.</p>
+      <button>Select Topic</button>
+    </div>
+    <div class="card" data-topic="Computer Science">
+      <h2>💻 Computer Science</h2>
+      <p>Programming, algorithms, data structures, and basics of AI.</p>
+      <button>Select Topic</button>
+    </div>
+    <div class="card" data-topic="English & Literature">
+      <h2>📚 English & Literature</h2>
+      <p>Advanced grammar, essays, comprehension, and literary analysis.</p>
+      <button>Select Topic</button>
+    </div>
+    <div class="card" data-topic="Logical Reasoning">
+      <h2>🧩 Logical Reasoning</h2>
+      <p>Analytical puzzles, reasoning problems, and critical thinking.</p>
+      <button>Select Topic</button>
+    </div>
+    <div class="card" data-topic="General Knowledge">
+      <h2>🌍 General Knowledge</h2>
+      <p>Current affairs, science, history, and international events.</p>
+      <button>Select Topic</button>
+    </div>
+  </div>
+
+  <script>const buttons = document.querySelectorAll(".card button");
+
+    buttons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        const topic = btn.closest(".card").dataset.topic;
+        alert(`You selected the topic: ${topic}`);
+        // Optional: redirect to quiz page:
+        // window.location.href = `quiz_16_18.html?topic=${topic}`;
+      });
+    });
+    
+
+  </script>
+</body>
+</html>

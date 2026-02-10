@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Topics for Age 19-21</title>
+  <link rel="stylesheet" href="topics_19_21.css" />
+</head>
+<body>
+  <div class="container header d-flex justify-content-between align-items-start my-5">
+    <div>
+      <h1>Choose a <span>Topic</span></h1>
+      <p>Pick a topic for your quiz!</p>
+    </div>
+    <a href="../age_group/age_group.html" class="back-btn">← Back</a>
+  </div>
+
+  <div class="card-container">
+    <div class="card" data-topic="Advanced Mathematics">
+      <h2>➗ Advanced Mathematics</h2>
+      <p>Calculus, linear algebra, probability, statistics, and discrete math.</p>
+      <button>Select Topic</button>
+    </div>
+    <div class="card" data-topic="Physics">
+      <h2>🧲 Physics</h2>
+      <p>Mechanics, thermodynamics, electromagnetism, and quantum basics.</p>
+      <button>Select Topic</button>
+    </div>
+    <div class="card" data-topic="Chemistry">
+      <h2>⚗ Chemistry</h2>
+      <p>Physical, organic, inorganic, and analytical chemistry concepts.</p>
+      <button>Select Topic</button>
+    </div>
+    <div class="card" data-topic="Biology">
+      <h2>🧬 Biology</h2>
+      <p>Genetics, molecular biology, physiology, and human anatomy.</p>
+      <button>Select Topic</button>
+    </div>
+    <div class="card" data-topic="Computer Science">
+      <h2>💻 Computer Science</h2>
+      <p>Programming, algorithms, data structures, web development, AI basics.</p>
+      <button>Select Topic</button>
+    </div>
+    <div class="card" data-topic="Economics & Business">
+      <h2>💼 Economics & Business</h2>
+      <p>Microeconomics, macroeconomics, finance, marketing, management.</p>
+      <button>Select Topic</button>
+    </div>
+    <div class="card" data-topic="Logical Reasoning & Aptitude">
+      <h2>🧩 Logical Reasoning & Aptitude</h2>
+      <p>Analytical thinking, puzzles, problem-solving, and quantitative aptitude.</p>
+      <button>Select Topic</button>
+    </div>
+    <div class="card" data-topic="General Knowledge & Current Affairs">
+      <h2>🌍 GK & Current Affairs</h2>
+      <p>Current events, general knowledge, global trends, and competitive awareness.</p>
+      <button>Select Topic</button>
+    </div>
+  </div>
+
+  <script >
+    const buttons = document.querySelectorAll(".card button");
+
+buttons.forEach(btn => {
+  btn.addEventListener("click", () => {
+    const topic = btn.closest(".card").dataset.topic;
+    alert(`You selected the topic: ${topic}`);
+    // Optional: redirect to quiz page:
+    // window.location.href = `quiz_19_21.html?topic=${topic}`;
+  });
+});
+
+  </script>
+</body>
+</html>

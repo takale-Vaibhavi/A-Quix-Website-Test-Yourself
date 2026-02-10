@@ -1,0 +1,43 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+  }
+  
+  .admin-wrapper {
+    min-height: 100vh;
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 220px;
+    min-height: 100vh;
+    background-color: #343a40;
+  }
+  
+  .sidebar-logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .sidebar .nav-link {
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .admin-content {
+    background-color: #fff;
+    flex-grow: 1;
+  }
+  
+  .admin-content h1,
+  .admin-content h2 {
+    color: #f97316;
+  }
+  
+  .card {
+    background-color: #fff3e0;
+    border-radius: 10px;
+    text-align: center;
+  }
+  

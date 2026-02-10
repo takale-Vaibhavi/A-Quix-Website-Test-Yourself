@@ -1,0 +1,95 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff9f3;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 0;
+}
+
+/* Back Button (optional if you want it) */
+.back-btn {
+  display: inline-block;
+  margin: 20px 0;
+  text-decoration: none;
+  color: #f97316;
+  font-weight: bold;
+  font-size: 16px;
+  border: 2px solid #f97316;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+.back-btn:hover {
+  background: #f97316;
+  color: #fff;
+}
+
+/* Heading */
+.solutions-heading {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.solutions-heading span {
+  color: #f97316;
+}
+
+/* Paragraphs */
+.solutions-text {
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+/* List */
+.solutions-list {
+  font-size: 18px;
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+.solutions-list li {
+  padding-bottom: 12px;
+  position: relative;
+  line-height: 1.5;
+}
+
+.solutions-list li::before {
+  content: "✔";
+  position: absolute;
+  left: -20px;
+  color: #f97316;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .solutions-heading {
+    font-size: 28px;
+  }
+
+  .solutions-text {
+    font-size: 16px;
+  }
+
+  .solutions-list {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Topics for Age 10-12</title>
+  <link rel="stylesheet" href="topics_10_12.css" />
+</head>
+<body>
+  <div class="container header d-flex justify-content-between align-items-start my-5">
+    <div>
+      <h1>Choose a <span>Topic</span></h1>
+      <p>Pick a topic for your quiz!</p>
+    </div>
+    <a href="../age_group/age_group.html" class="back-btn">← Back</a>
+  </div>
+
+  <div class="card-container">
+    <div class="card" data-topic="Mathematics">
+      <h2>➗ Mathematics</h2>
+      <p>Fractions, decimals, geometry, and basic algebra.</p>
+      <button>Select Topic</button>
+    </div>
+    <div class="card" data-topic="Science">
+      <h2>🔬 Science</h2>
+      <p>Biology, chemistry, physics, and experiments.</p>
+      <button>Select Topic</button>
+    </div>
+    <div class="card" data-topic="English">
+      <h2>📚 English</h2>
+      <p>Grammar, comprehension, vocabulary, and writing skills.</p>
+      <button>Select Topic</button>
+    </div>
+    <div class="card" data-topic="History & Civics">
+      <h2>🏛 History & Civics</h2>
+      <p>Learn about historical events, governments, and society.</p>
+      <button>Select Topic</button>
+    </div>
+    <div class="card" data-topic="Geography">
+      <h2>🌍 Geography</h2>
+      <p>Countries, maps, climates, and natural resources.</p>
+      <button>Select Topic</button>
+    </div>
+    <div class="card" data-topic="Logical Reasoning">
+      <h2>🧩 Logical Reasoning</h2>
+      <p>Puzzles, patterns, and critical thinking exercises.</p>
+      <button>Select Topic</button>
+    </div>
+    <div class="card" data-topic="Digital Literacy">
+      <h2>💻 Digital Literacy</h2>
+      <p>Computers, internet safety, and basic coding concepts.</p>
+      <button>Select Topic</button>
+    </div>
+    <div class="card" data-topic="Creativity & Arts">
+      <h2>🎨 Creativity & Arts</h2>
+      <p>Drawing, painting, music, and creative problem solving.</p>
+      <button>Select Topic</button>
+    </div>
+  </div>
+
+  <script >// Select all topic buttons
+    const buttons = document.querySelectorAll(".card button");
+    
+    buttons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        const topic = btn.closest(".card").dataset.topic;
+        alert(`You selected the topic: ${topic}`);
+        // You can redirect to quiz page:
+        // window.location.href = `quiz_10_12.html?topic=${topic}`;
+      });
+    });
+    
+
+  </script>
+</body>
+</html>
